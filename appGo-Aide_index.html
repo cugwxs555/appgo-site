@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>appGo-Aide — Support</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #2f6fed;
+    --line: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161617;
+      --card: #1f1f21;
+      --text: #f2f2f7;
+      --muted: #a1a1a6;
+      --accent: #6d9bff;
+      --line: #333336;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+  header { padding: 40px 0 28px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); font-size: 17px; margin: 0; }
+  h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 16px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .mail { font-weight: 600; }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  details:first-of-type { border-top: none; }
+  summary { cursor: pointer; font-weight: 600; }
+  summary::marker { color: var(--muted); }
+  details p { color: var(--muted); margin: 8px 0 0; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>appGo-Aide — Support</h1>
+    <p class="tagline">A macOS assistant for weather, system monitoring and quick app launching.</p>
+  </header>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>If you run into any problem or have a suggestion, email us at
+      <span class="mail"><a href="mailto:cugwxs@icloud.com">cugwxs@icloud.com</a></span>.
+      We usually reply within two business days.</p>
+    <p style="color:var(--muted);margin-bottom:0">When reporting an issue, please include your macOS version, the app version (About appGo-Aide) and a short description of what happened.</p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="card">
+    <details>
+      <summary>Weather is not showing up</summary>
+      <p>Weather comes from Apple WeatherKit and requires an internet connection plus location permission. Open System Settings → Privacy &amp; Security → Location Services and make sure appGo-Aide is allowed. If your network is unavailable the app will ask you to check your connection; simply tap the weather button again to retry.</p>
+    </details>
+    <details>
+      <summary>How do I add or remove apps?</summary>
+      <p>Use “Remove Shortcuts” on the main window to manage the list. Up to ten apps can be pinned, and “Add App Shortcut” lets you pick any application installed on your Mac.</p>
+    </details>
+    <details>
+      <summary>How do I enable launch at login?</summary>
+      <p>Tick “Launch at login” on the main window. macOS may also ask for your confirmation in System Settings → General → Login Items. After signing in, appGo-Aide shows a floating bar at the top of the screen; click it to open the main window.</p>
+    </details>
+    <details>
+      <summary>Why does appGo-Aide ask to control other apps?</summary>
+      <p>The “Quit Shortcuts” feature sends a quit request to the apps you added. macOS shows an automation permission prompt once; without your approval this feature stays disabled.</p>
+    </details>
+    <details>
+      <summary>How do I switch the interface language?</summary>
+      <p>Click the language button in the upper-right corner of the main window. appGo-Aide supports English and Simplified Chinese and remembers your choice.</p>
+    </details>
+    <details>
+      <summary>Which macOS versions are supported?</summary>
+      <p>appGo-Aide requires macOS 13 Ventura or later.</p>
+    </details>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p>Weather data provided by Apple Weather. © 2026 wxs. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
